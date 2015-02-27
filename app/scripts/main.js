@@ -1,6 +1,9 @@
-;(function() {
 
-  angular.module('BandsAtl', ['ng-route'])
+;(function() {
+  // $( '[type=date], .datepicker' ).pickadate();
+
+
+  angular.module('BandsAtl', ['ngRoute'])
   .constant('PARSE', {
     URL: 'https://api.parse.com/1/',
     CONFIG: {
@@ -13,12 +16,19 @@
 
   })
 
-  .config(function($routeProvider){
+    .config( function($routeProvider){
 
-    // $routeProvider.when('/', {
-    //   templateUrl:
-    // })
+    $routeProvider.when('/', {
+      templateUrl: 'scripts/bands/list.temp.html',
+      controller: 'ShowsController'
+    })
+
+    .when('/add', {
+      templateUrl: 'scripts/bands/add.temp.html',
+      controller: 'ShowsController'
+    });
 
   });
+
 
 }());

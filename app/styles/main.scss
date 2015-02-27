@@ -1,23 +1,45 @@
 
 // Custom Styles
 body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+height: 850px;
+width: 100%;
+background-image: url('../images/umphreys.jpg')
+}
+.header{
+  a{
+    padding: 20px;
+    font-size: 25px;
+    color: gold;
+  }
+}
+h1{
+  font-size: 50px;
+  color: gold;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 600px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+.container{
+  ul{
+    font-size: 17pt;
+    color: white;
+    font-weight: 500;
+
+  }
+  form{
+    padding: 50px;
+    input{
+      background-color: lightyellow;
+      margin: 5px;
+      border-radius: 5px;
+      width: 200px;
+    }
+    textarea{
+      background-color: lightyellow;
+      margin: 5px;
+      border-radius: 5px;
+    }
+    button{
+      background-color: lightyellow;
+      border-radius: 5px;
+    }
   }
 }
