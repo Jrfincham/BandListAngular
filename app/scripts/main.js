@@ -19,12 +19,17 @@
     .config( function($routeProvider){
 
     $routeProvider.when('/', {
-      templateUrl: 'scripts/bands/list.temp.html',
-      controller: 'ShowsController'
+      templateUrl: 'scripts/user/login.temp.html',
+      controller: 'LoginController'
     })
 
     .when('/add', {
       templateUrl: 'scripts/bands/add.temp.html',
+      controller: 'ShowsController'
+    })
+
+    .when('/list', {
+      templateUrl: 'scripts/bands/list.temp.html',
       controller: 'ShowsController'
     });
 

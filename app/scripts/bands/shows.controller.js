@@ -17,11 +17,11 @@
       $scope.addShow = function(w){
 
         ShowsFactory.add(w);
+        elem.reset();
 
       };
 
       $rootScope.$on('show:add', function(){
-        elem.reset();
       });
 
     }
