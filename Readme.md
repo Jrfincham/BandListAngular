@@ -1,5 +1,1 @@
-## Readme
-
-You should probably update this file.
-
-> This app was generated with the [Yeoman TIY Generator](https://github.com/twhitacre/generator-tiy-webapp)
+This is an app to track bands playing in and around Atlanta. It was built using backbone.js.
