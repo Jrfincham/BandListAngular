@@ -1,9 +1,8 @@
 
 ;(function() {
-  // $( '[type=date], .datepicker' ).pickadate();
 
 
-  angular.module('BandsAtl', ['ngRoute'])
+  angular.module('BandsAtl', ['ngRoute', 'ngCookies'])
   .constant('PARSE', {
     URL: 'https://api.parse.com/1/',
     CONFIG: {
@@ -19,8 +18,13 @@
     .config( function($routeProvider){
 
     $routeProvider.when('/', {
+      templateUrl: 'scripts/user/register.temp.html',
+      controller: 'UserController'
+    })
+
+    .when('/login', {
       templateUrl: 'scripts/user/login.temp.html',
-      controller: 'LoginController'
+      controller: 'UserController'
     })
 
     .when('/add', {

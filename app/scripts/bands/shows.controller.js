@@ -17,7 +17,7 @@
       $scope.addShow = function(w){
 
         ShowsFactory.add(w);
-        elem.reset();
+      
 
       };
 
