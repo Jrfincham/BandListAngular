@@ -7,7 +7,10 @@
 
       // Getting a list of shows
       var getAllShows = function(){
-      return  $http.get(PARSE.URL + 'classes/Shows', PARSE.CONFIG);
+      return  $http.get(PARSE.URL + 'classes/Shows', PARSE.CONFIG)
+      .success(function(){
+        $rootScope.$broadcast('allBands: list');
+      });
     };
 
 

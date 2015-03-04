@@ -4,21 +4,29 @@
 
   angular.module('BandsAtl')
 
-  .controller('UserController', ['$scope', 'UserFactory',
+  .controller('UserController', ['$scope', 'UserFactory', '$location',
 
-    function ($scope, UserFactory) {
+    function ($scope, UserFactory, $location) {
 
-      // Add a new user
+      var user = UserFactory.user();
+      if (user) {
+        return $location.path('#/add');
+      }
+
+
       $scope.registerUser = function (userObj) {
         UserFactory.register(userObj);
       };
 
-      // Login Method
+
       $scope.loginUser = function (userObj) {
         UserFactory.login(userObj);
       };
 
-      
+
+      $scope.logout = function () {
+        UserFactory.logout();
+      };
 
     }
 
