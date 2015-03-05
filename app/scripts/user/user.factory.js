@@ -15,9 +15,8 @@
       // Add a new User
       var addUser = function (userObj) {
         $http.post(PARSE.URL + 'users', userObj, PARSE.CONFIG)
-          .then( function (res) {
-            console.log(res);
-            $location.path('#/add');
+          .then( function () {
+            $location.path('/add');
           }
         );
       };

@@ -32,6 +32,11 @@
       controller: 'ShowsController'
     })
 
+    .when('/%23/add', {
+      templateUrl: 'scripts/bands/add.temp.html',
+      controller: 'ShowsController'
+    })
+
     .when('/list', {
       templateUrl: 'scripts/bands/list.temp.html',
       controller: 'ShowsController'
