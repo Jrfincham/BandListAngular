@@ -45,7 +45,7 @@
 
       var logoutUser = function (res) {
         $cookieStore.remove('currentUser');
-        $location.path('#/login');
+        $location.path('/login');
         console.log(res);
       };
 

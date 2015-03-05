@@ -10,7 +10,7 @@
 
       var user = UserFactory.user();
       if (user) {
-        return $location.path('#/add');
+        return $location.path('/add');
       }
 
 
