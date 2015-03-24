@@ -3,7 +3,7 @@
 
 This is an app that can track bands playing in Atlanta.
 
-### Libraries Used
+### Resources Used
 * HTML
 * CSS
 * JavaScript
