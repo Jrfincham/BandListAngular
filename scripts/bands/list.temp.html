@@ -1,0 +1,8 @@
+
+<a href="#/login">Logout</a>
+<a href="#/add">Add a show</a>
+<ul>
+
+  <li ng-repeat="band in allBands">Come see {{ band.name }} on {{ band.date | date: 'fullDate' }} at the {{ band.venue }} <br><br>Description: <br> {{band.desc}} <hr></li>
+
+</ul>

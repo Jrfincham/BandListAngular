@@ -1,0 +1,9 @@
+<div ng-controller="UserController">
+  <span><a href="#/login">Login</a></span>
+  <form ng-submit="registerUser(user)">
+    <input ng-model="user.email" type="text" name="email" placeholder="Email" />
+    <input ng-model="user.username" type="text" name="user" placeholder="Username" />
+    <input ng-model="user.password" type="password" name="pass" placeholder="Password" />
+    <input type="submit" value="Register" />
+  </form>
+</div>
