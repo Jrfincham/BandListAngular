@@ -5,9 +5,14 @@ height: 850px;
 width: 100%;
 background-image: url('../images/umphreys.jpg')
 }
+
+.header{
+  margin: 1em 5em;
+}
+
 a{
   font-size: 25px;
-  color: lightyellow;  
+  color: lightyellow;
 }
 
 h1{
@@ -16,6 +21,7 @@ h1{
 }
 
 .container{
+  margin: 5em 5em;
   ul{
     font-size: 17pt;
     color: white;
